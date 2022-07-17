@@ -70,7 +70,7 @@ header, main, article, section, aside, footer {
 
 header {
     outline: 1px solid green;
-    height: 10vh;
+    height: 12vh;
     background-color: black;
     display: flex;
     justify-content: center;
@@ -91,11 +91,12 @@ img {
 
 .left-container {
     font-size: 7vh;
+    font-family: 'college';
     color: white;
     /* animation */
     animation-name: BAD;
     animation-duration: 1.2s;
-    animation-timing-function: cubic-bezier(0, 0, 0.3, 1); 
+    animation-timing-function: cubic-bezier(0, 0, 0.3, 1);
 }
 
 .right-container {
@@ -104,7 +105,7 @@ img {
     /* animation */
     animation-name: DOG;
     animation-duration: 1.2s;
-    animation-timing-function: cubic-bezier(0, 0, 0.3, 1); 
+    animation-timing-function: cubic-bezier(0, 0, 0.3, 1);
 }
 
 /* --- ANIMATION BAD DOG --- */
@@ -174,7 +175,7 @@ img {
 
 main {
     outline: 1px solid red;
-    height: 90vh;
+    height: 88vh;
     background-color: black;
 }
 
@@ -195,23 +196,23 @@ main {
 /* FONTS */
 
 @font-face { /* BAD DOG */
-    font-family: "college";
-    src: url("/src/assets/fonts/CollegeBlock.ttf);
+    font-family: 'college';
+    src: url("../fonts/CollegeBlock.otf");
 }
 
 @font-face { /* Ètlap */
     font-family: "mrdafoe";
-    src: url("/src/assets/fonts/MrDafoe.ttf");
+    src: url("../fonts/MrDafoe.ttf");
 }
 
 @font-face { /* Burger Titles */
     font-family: "d-din";
-    src: url("/src/assets/fonts/D-DinBold.ttf");
+    src: url("../fonts/D-DinBold.ttf");
 }
 
 @font-face { /* Házhozszállítás, Burger Details */
     font-family: "din-next";
-    src: url("/src/assets/fonts/DIN-Next-Arabic.ttf");
+    src: url("../fonts/DIN-Next-ArabicBold.ttf");
 }
 
 .font-test1 {
