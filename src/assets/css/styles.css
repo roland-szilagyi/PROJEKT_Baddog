@@ -53,7 +53,7 @@ table {
 }
 
 HTML {
-    10px;
+    background-color: black;
 }
 
 header, main, article, section, aside, footer {
@@ -64,14 +64,9 @@ header, main, article, section, aside, footer {
 /* --- RESET --- END */
 /* --- HEADER --- */
 
-
-
-
-
 header {
     outline: 1px solid green;
     height: 12vh;
-    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,7 +76,7 @@ header {
     height: 10vh;
 }
 
-img {
+.logo-header {
     height: 100%;
     animation-name: LOGO;
     animation-duration: 0.7s;
@@ -90,9 +85,8 @@ img {
 }
 
 .left-container {
-    font-size: 7vh;
+    font-size: 8vh;
     font-family: 'college';
-    color: white;
     /* animation */
     animation-name: BAD;
     animation-duration: 1.2s;
@@ -100,15 +94,14 @@ img {
 }
 
 .right-container {
-    font-size: 7vh;
-    color: white;
+    font-size: 8vh;
     /* animation */
     animation-name: DOG;
     animation-duration: 1.2s;
     animation-timing-function: cubic-bezier(0, 0, 0.3, 1);
 }
 
-/* --- ANIMATION BAD DOG --- */
+/* --- ANIMATION BAD DOG, LOGO --- */
 
 @keyframes BAD {
     from {
@@ -132,8 +125,6 @@ img {
     }
 }
 
-/* --- ANIMATION BAD DOG --- END */
-
 @keyframes LOGO {
     0%{
         height: 100%;
@@ -147,7 +138,59 @@ img {
     }
 }
 
-/* --- ANIMATION : LOGO --- END */
+/* --- ANIMATION BAD DOG, LOGO --- END */
+
+/* --- ARTICLE / MENÜ --- */
+
+.menu-container {
+    height: 4vh;
+    font-size: 1.7vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* --- ARTICLE / MENÜ --- END */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -175,23 +218,8 @@ img {
 
 main {
     outline: 1px solid red;
-    height: 88vh;
-    background-color: black;
+    height: 84vh;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* FONTS */
 
@@ -201,17 +229,17 @@ main {
 }
 
 @font-face { /* Ètlap */
-    font-family: "mrdafoe";
+    font-family: 'mrdafoe';
     src: url("../fonts/MrDafoe.ttf");
 }
 
 @font-face { /* Burger Titles */
-    font-family: "d-din";
+    font-family: 'd-din';
     src: url("../fonts/D-DinBold.ttf");
 }
 
 @font-face { /* Házhozszállítás, Burger Details */
-    font-family: "din-next";
+    font-family: 'din-next';
     src: url("../fonts/DIN-Next-ArabicBold.ttf");
 }
 
@@ -230,3 +258,14 @@ main {
 .font-test4 {
     font-family: 'din-next';
 }
+
+/* COLORS */
+
+.white {
+    color: white;
+}
+
+/* header : 12vh,
+   menü-container : 4vh,
+   menu : 84vh; 
+*/
